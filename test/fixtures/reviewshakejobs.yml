@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_id: MyString
+  status: false
+  state_status: MyString
+  locations: one
+
+two:
+  job_id: MyString
+  status: false
+  state_status: MyString
+  locations: two

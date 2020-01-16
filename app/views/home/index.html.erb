@@ -1,0 +1,20 @@
+<% flash.each do |key, value| %>
+<div class="alert alert-<%= key %>" role="alert" id="flash">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<%= value%>
+</div>
+<% end %>
+<h1>Welcome User</h1>
+<%= button_to "Click me", new_business_path, :method => "get" %>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		setTimeout(function() {
+    	$('#flash').fadeOut();
+		}, 3000);
+		$('.close').click(function(){
+			$('#flash').fadeOut();
+
+	});
+});
+</script>
